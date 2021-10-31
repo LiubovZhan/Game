@@ -1,0 +1,101 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "addUnit",
+			"inputs": [
+				{"name":"unitAddress","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "deleteUnit",
+			"inputs": [
+				{"name":"unitAddress","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "viewUnit",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"address[]"}
+			]
+		},
+		{
+			"name": "deathBase",
+			"inputs": [
+				{"name":"unitAddress1","type":"address"},
+				{"name":"unitAddress2","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getPowerProtection",
+			"inputs": [
+				{"name":"powerProtection","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "acceptAttack",
+			"inputs": [
+				{"name":"power","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "statusAttack",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"string"}
+			]
+		},
+		{
+			"name": "viewPowerProtection",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "kill",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"attack","type":"uint256"},
+		{"name":"protection","type":"uint256"},
+		{"name":"opponentAddress","type":"address"},
+		{"name":"lives","type":"uint256"},
+		{"name":"message","type":"string"},
+		{"name":"ArrayUnit","type":"address[]"}
+	]
+}

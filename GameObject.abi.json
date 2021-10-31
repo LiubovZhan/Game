@@ -1,0 +1,67 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "getPowerProtection",
+			"inputs": [
+				{"name":"powerProtection","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "acceptAttack",
+			"inputs": [
+				{"name":"power","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "statusAttack",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"string"}
+			]
+		},
+		{
+			"name": "viewPowerProtection",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "kill",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"attack","type":"uint256"},
+		{"name":"protection","type":"uint256"},
+		{"name":"opponentAddress","type":"address"},
+		{"name":"lives","type":"uint256"},
+		{"name":"message","type":"string"}
+	]
+}
